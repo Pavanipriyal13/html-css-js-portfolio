@@ -1,0 +1,169 @@
+/* IMPORT FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* RESET & BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #fff;
+  color: slateblue;
+  line-height: 1.6;
+}
+
+/* LINKS & BUTTONS */
+a,
+.btn {
+  font-size: large;
+  text-decoration: none;
+  color: slateblue;
+  transition: all 300ms ease;
+}
+
+a:hover {
+  color: darkblue;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+}
+
+/* NAVIGATION */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #f0f0f0;
+}
+
+.logo {
+  font-size: 3rem;
+  color: black;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+/* HOME SECTION */
+#home {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+#home h1 {
+  font-size: 2.5rem;
+  color: darkblue;
+  margin-bottom: 1rem;
+}
+
+#home p {
+  font-size: 1.2rem;
+  color: slateblue;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      width: 100%;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+  
+    .logo {
+      font-size: 1.5rem;
+    }
+  
+    #home h1 {
+      font-size: 2rem;
+    }
+  
+    #home p {
+      font-size: 1rem;
+    }
+  }
+
+  section {
+    padding: 3rem 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    background-color: #fafafa;
+  }
+  
+  section:nth-of-type(even) {
+    background-color: #f0f8ff;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: rgb(56, 54, 54);
+    margin-bottom: 1rem;
+  }
+  
+  .section-content {
+    font-size: 1.1rem;
+    color: slateblue;
+  }
+  
+  .project h3 {
+    font-size: 1.3rem;
+    color: slateblue;
+    margin-top: 1rem;
+  }
+  
+  ul.section-content {
+    list-style-type: disc;
+    padding-left: 2rem;
+  }
+  
+  ul.section-content li {
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Add spacing between sections */
+section {
+    padding: 60px 40px; /* more vertical and horizontal space */
+    margin-bottom: 40px;
+  }
+  
+  /* Section content spacing */
+  .section-content {
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  /* Optional: give subtle background colors to every other section for contrast */
+  section:nth-of-type(even) {
+    background-color: #f0f4ff; /* light slate blue */
+  }
+  
+  section:nth-of-type(odd) {
+    background-color: #fff;
+  }
+  
+  /* Headings spacing */
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraph spacing */
+  p {
+    margin-bottom: 12px;
+    line-height: 1.6;
+  }
+  
